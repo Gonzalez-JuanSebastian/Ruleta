@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    font-family: "Arimo", sans-serif;
+}
+
+/** Fondo **/
+body {
+    position: relative;
+    z-index: 0;
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la pantalla */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../IMG/NibaMotech5.png');
+    background-repeat: no-repeat;
+    background-position: center center; /* Centra la imagen */
+    background-size: contain; /* Escala la imagen para cubrir todo el fondo */
+    opacity: 0.5; 
+    z-index: -1;
+}
+
+
+/** Navegador **/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E51A2F;
+    
+}
+
+.log{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.logo{
+    height:30px;
+}
+
+#header-text{
+    margin: 10px 20px;
+}
+
+/** Selector **/
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+   
+}
+
+/** Boton **/
+
+.botones{
+    border: #E51A2F solid 3px;
+    border-radius: 20px;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0px;
+}
+
+.boton{
+    background-color: #E51A2F;
+    border-radius: 15px;
+    margin: 40px 50px;
+}
+
+.boton:hover{
+    background-color: #fff;
+    color: #E51A2F;
+}
+
+.Boton{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.Boton:hover{
+    background-color: #fff;
+    color: #E51A2F;
+}
+
+#Boton2{
+    color:#E51A2F;
+    padding: 10px;
+    border:2px solid;
+    border-radius: 5px;
+
+}
+
+.Boton p{
+    padding: 20px 30px;
+    font-size: 48px;
+}
+
+.Boton2:hover,
+.Boton2:focus{
+    border-radius: 5px;
+    color: #E51A2F;
+    transition: .5s;
+}
+
+
+
+/** Ruta **/
+.ruta{
+    padding: 20px;
+    margin: 30px;
+}
+
+.ruta:hover{
+    background-color: #fff;
+    border: 2px solid #E51A2F;
+    border-radius: 15px;    
+}
+
+.rutas {
+    text-decoration: none;
+    color: #E51A2F;
+}
+
+.user-info{
+    color: #fff;
+    font-size: 20px;
+    margin: 0px 15px
+}
+
+
